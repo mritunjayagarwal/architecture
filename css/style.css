@@ -73,7 +73,7 @@ p {
 b,
 strong {
     font-weight: 600;
-    color: #7FB1C5;
+    color: #0f435f;
 }
 a {
     color: #181b31;
@@ -120,7 +120,7 @@ img {
 }
 .section-padding span {
     font-size: 11px;
-    color: #7FB1C5;
+    color: #0f435f;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 5px;
@@ -202,7 +202,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom-width: 1px;
-    border-color: #7FB1C5;
+    border-color: #0f435f;
 }
 input[type="submit"],
 input[type="reset"],
@@ -219,20 +219,20 @@ button {
     -webkit-transition: background-color .15s ease-out;
     transition: background-color .15s ease-out;
     background-color: transparent;
-    border: 1px solid #7FB1C5;
+    border: 1px solid #0f435f;
     margin: 3px 0;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover {
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     color: #fff;
 }
 .alert-success {
     background: transparent;
     color: #808291;
-    border: 1px solid #7FB1C5;
+    border: 1px solid #0f435f;
     border-radius: 0px;
 }
 /* placeholder */
@@ -275,7 +275,7 @@ input[type="checkbox"] {
     -webkit-box-flex: 1;
     flex: 1 0;
     height: 1px;
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     display: -webkit-box;
     display: flex;
     margin-top: 13px;
@@ -455,10 +455,10 @@ h2:after {
     transition: all 200ms linear;
 }
 .nav-item:hover .nav-link {
-    color: #7FB1C5 !important;
+    color: #0f435f !important;
 }
 .nav-item.active .nav-link {
-    color: #7FB1C5;
+    color: #0f435f;
     font-weight: 300;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -481,7 +481,7 @@ h2:after {
     width: 100%;
     height: 1px;
     content: '';
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     opacity: 0;
     transition: all 200ms linear;
 }
@@ -497,7 +497,7 @@ h2:after {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 /* Dropdown style */
 .bg-light {
@@ -550,7 +550,7 @@ h2:after {
 }
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #7FB1C5;
+    color: #0f435f;
     background-color: rgba(255, 255, 255);
 }
 .ti-angle-down {
@@ -639,7 +639,7 @@ h2:after {
     padding-bottom: 15px;
     font-weight: 400;
     color: transparent;
-    -webkit-text-stroke: 1px #7FB1C5;
+    -webkit-text-stroke: 1px #0f435f;
 }
 .arcprime-slider-title {
     font-size: 32px;
@@ -705,7 +705,7 @@ h2:after {
     right: 0;
     left: 45px;
     bottom: 0;
-    border: 10px solid #9ED3EB;
+    border: 10px solid #0f435f;
 }
 .arcprime-about-img .img:after {
     content: '';
@@ -727,7 +727,7 @@ h2:after {
     line-height: 120px;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
-    color: #9ED3EB;
+    color: #0f435f;
 }
 .year {
     display: inline-block;
@@ -747,7 +747,7 @@ h2:after {
     width: 200px;
 }
 .small-title {
-    color: #7FB1C5;
+    color: #0f435f;
     margin: 5px 0;
     font-size: 11px;
     text-transform: uppercase;
@@ -870,11 +870,11 @@ ul.team-info-social li {
 }
 .arcprime-services .item:hover {
     box-shadow: 0 45px 100px 0 rgba(0, 0, 0, .08);
-    border-bottom: 3px solid #7FB1C5;
+    border-bottom: 3px solid #0f435f;
 }
 .arcprime-services .item .icon {
     font-size: 50px;
-    color: #7FB1C5;
+    color: #0f435f;
     line-height: 1.5em;
 }
 .arcprime-services .item h5 {
@@ -884,7 +884,7 @@ ul.team-info-social li {
     font-family: 'Poppins', sans-serif;
 }
 .arcprime-services .item.active {
-    border-bottom: 3px solid #7FB1C5;
+    border-bottom: 3px solid #0f435f;
 }
 .arcprime-services .item ul {
     padding-left: 1.5em;
@@ -898,7 +898,7 @@ ul.team-info-social li {
     display: inline-block;
     margin-left: -1.5em;
     width: 1.5em;
-    color: #7FB1C5;
+    color: #0f435f;
 }
 
 
@@ -931,7 +931,7 @@ ul.team-info-social li {
     margin-right: 0;
 }
 .arcprime-project-filter li.active {
-    color: #7FB1C5;
+    color: #0f435f;
     content: "";
     left: 0;
     bottom: -4px;
@@ -941,7 +941,7 @@ ul.team-info-social li {
     transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 .arcprime-project-filter li:hover {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 .arcprime-project-wrap {
     padding-bottom: 90px;
@@ -979,7 +979,7 @@ ul.team-info-social li {
     top: 80px;
 }
 .arcprime-project-link {
-    color: #7FB1C5;
+    color: #0f435f;
     font-size: 16px;
     font-weight: 300;
     position: relative;
@@ -994,7 +994,7 @@ ul.team-info-social li {
     display: inline-block;
     width: 80px;
     height: 1px;
-    background: #7FB1C5;
+    background: #0f435f;
     position: absolute;
     left: 0;
     bottom: 15px;
@@ -1002,7 +1002,7 @@ ul.team-info-social li {
 }
 .arcprime-project-link:before:hover {
     padding-left: 5px;
-    color: #7FB1C5;
+    color: #0f435f;
     transition: all 0.3s ease-in-out;
 }
 .arcprime-project-link i {
@@ -1017,11 +1017,11 @@ ul.team-info-social li {
 }
 .arcprime-project-link:hover i {
     padding-left: 5px;
-    color: #7FB1C5;
+    color: #0f435f;
     transition: all 0.3s ease-in-out;
 }
 .arcprime-project-link:hover {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 
 
@@ -1227,7 +1227,7 @@ ul.team-info-social li {
     font-family: 'Oswald', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
-    color: #7FB1C5;
+    color: #0f435f;
     font-weight: 400;
     letter-spacing: 5px;
     line-height: 2.75em;
@@ -1243,7 +1243,7 @@ ul.team-info-social li {
     color: #181b31;
 }
 .blog-page .post-cont h5 a:hover {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 .blog-page .post-cont .info {
     margin-top: 0px;
@@ -1279,10 +1279,10 @@ ul.team-info-social li {
     color: #808291;
 }
 .blog-sidebar .widget ul li a.active {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 .blog-sidebar .widget ul li a:hover {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 .blog-sidebar .widget ul li:last-child {
     margin-bottom: 0;
@@ -1343,7 +1343,7 @@ ul.team-info-social li {
 .blog-sidebar .tags li {
     margin: 3px !important;
     padding: 6px 16px;
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     color: #fff !important;
     float: left;
 }
@@ -1384,8 +1384,8 @@ ul.team-info-social li {
     box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.20);
 }
 .blog-pagination-wrap li a.active {
-    background-color: #7FB1C5;
-    border: 1px solid #7FB1C5;
+    background-color: #0f435f;
+    border: 1px solid #0f435f;
     color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -1450,7 +1450,7 @@ ul.team-info-social li {
 /* Buttons */
 .arcprime-btn {
     padding: 8px 24px;
-    border: 1px solid #7FB1C5;
+    border: 1px solid #0f435f;
     color: #808291;
     font-weight: 300;
     position: relative;
@@ -1466,14 +1466,14 @@ ul.team-info-social li {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
     -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
     transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 .arcprime-btn:hover,
 .arcprime-btn:focus {
-    border-color: 1px solid #7FB1C5;
+    border-color: 1px solid #0f435f;
     color: #fff !important;
 }
 .arcprime-btn:hover:after,
@@ -1482,14 +1482,14 @@ ul.team-info-social li {
 }
 .arcprime-btn2 {
     padding: 10px 25px;
-    border: 2px solid #7FB1C5;
+    border: 2px solid #0f435f;
     color: #fff;
     font-weight: 300;
     position: relative;
     z-index: 1;
     outline: none;
     width: fit-content;
-    background: #7FB1C5;
+    background: #0f435f;
 }
 .arcprime-btn2:after {
     content: '';
@@ -1499,14 +1499,14 @@ ul.team-info-social li {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
     -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
     transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 .arcprime-btn2:hover,
 .arcprime-btn2:focus {
-    border-color: #7FB1C5;
+    border-color: #0f435f;
     color: #fff !important;
 }
 .arcprime-btn2:hover:after,
@@ -1532,7 +1532,7 @@ ul.team-info-social li {
     top: 85%;
     background-repeat: no-repeat;
     background-position: center 15px;
-    background-color: #7FB1C5;
+    background-color: #0f435f;
     font-size: 9px;
     line-height: 1;
     font-weight: 300;
@@ -1602,7 +1602,7 @@ ul.team-info-social li {
     font-size: 13px;
     font-weight: 400;
     font-family: "Oswald", sans-serif;
-    color: #7FB1C5;
+    color: #0f435f;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -1622,20 +1622,20 @@ ul.team-info-social li {
     height: 34px;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #7FB1C5;
+    border: 1px solid #0f435f;
     font-size: 12px;
     margin: 0;
 }
 .footer-social-link li:hover {
-    color: #7FB1C5;
+    color: #0f435f;
     background-color: transparent;
-    border: 1px solid #7FB1C5;
+    border: 1px solid #0f435f;
 }
 .footer-social-link li i {
     color: #808291;
 }
 .footer-social-link li i:hover {
-    color: #7FB1C5;
+    color: #0f435f;
 }
 .footer-section p {
     color: #808291;
