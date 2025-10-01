@@ -112,6 +112,36 @@ img {
     margin-top: 120px;
     padding: 90px 0;
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-padding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-padding .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-padding .title {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.banner-padding .title span {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .section-padding {
@@ -1261,17 +1291,27 @@ ul.team-info-social li {
 }
 .arcprime-project-content {
     position: absolute;
-    left: 40px;
-    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .arcprime-project-link {
-    color: #0f435f;
-    font-size: 16px;
-    font-weight: 300;
+    color: #181b31;
+    font-size: 12px;
+    font-weight: 500;
     position: relative;
     padding-right: 40px;
-    line-height: 1.75em;
+    line-height: 1.6em;
     display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     padding-left: 80px;
 }
@@ -2035,12 +2075,18 @@ ul.team-info-social li {
         padding-left: 20px;
     }
     .arcprime-project-wrap h3 {
-        font-size: 22px;
-    }
-    .arcprime-project-content {
-        top: 40px;
+        font-size: 18px;
     }
 }
+@media (max-width: 768px) {
+    .arcprime-project-wrap {
+        padding-left: 10px;
+    }
+    .arcprime-project-wrap h3 {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 992px) {
     ul.nav > li > a {
         padding: 0 5px;
