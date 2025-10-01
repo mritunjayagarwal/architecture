@@ -1,0 +1,118 @@
+/* Revolution Slider Layers CSS */
+
+/* Layer animations and transitions */
+.tp-layer {
+    position: absolute;
+    z-index: 10;
+}
+
+/* Text layers */
+.tp-layer h1,
+.tp-layer h2,
+.tp-layer h3,
+.tp-layer h4,
+.tp-layer h5,
+.tp-layer h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.tp-layer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image layers */
+.tp-layer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button layers */
+.tp-layer .btn,
+.tp-layer .button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+/* Animation classes */
+.tp-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tp-fade.tp-active {
+    opacity: 1;
+}
+
+.tp-slideup {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tp-slideup.tp-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.tp-slidedown {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tp-slidedown.tp-active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.tp-slideleft {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tp-slideleft.tp-active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.tp-slideright {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tp-slideright.tp-active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.tp-scale {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.tp-scale.tp-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Mask animations */
+.tp-mask {
+    overflow: hidden;
+}
+
+.tp-mask-x {
+    overflow-x: hidden;
+}
+
+.tp-mask-y {
+    overflow-y: hidden;
+}
+

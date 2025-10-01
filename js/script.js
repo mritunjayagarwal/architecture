@@ -208,4 +208,46 @@
         .done(done_func)
         .fail(fail_func);
     });
+
+// Project Carousel Script
+$(document).ready(function() {
+    var currentSlide = 0;
+    var slides = $('.carousel-slide');
+    var dots = $('.carousel-dots .dot');
+    var totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.removeClass('active');
+        dots.removeClass('active');
+        slides.eq(index).addClass('active');
+        dots.eq(index).addClass('active');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    // Event listeners
+    $('#nextBtn').click(function() {
+        nextSlide();
+    });
+
+    $('#prevBtn').click(function() {
+        prevSlide();
+    });
+
+    dots.click(function() {
+        currentSlide = $(this).data('slide');
+        showSlide(currentSlide);
+    });
+
+    // Initialize
+    showSlide(0);
+});
     
