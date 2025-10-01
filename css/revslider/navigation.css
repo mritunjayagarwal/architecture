@@ -1,0 +1,182 @@
+/* Revolution Slider Navigation CSS */
+
+/* Arrow Navigation */
+.tp-leftarrow,
+.tp-rightarrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.tp-leftarrow:hover,
+.tp-rightarrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tp-leftarrow {
+    left: 20px;
+}
+
+.tp-rightarrow {
+    right: 20px;
+}
+
+.tp-leftarrow:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+}
+
+.tp-rightarrow:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+}
+
+/* Bullet Navigation */
+.tp-bullets {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+}
+
+.tp-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.tp-bullet:hover,
+.tp-bullet.selected {
+    background-color: #0f435f;
+    border-color: #fff;
+}
+
+/* Thumbnail Navigation */
+.tp-thumbs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tp-thumb {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.tp-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tp-thumb:hover,
+.tp-thumb.selected {
+    border-color: #0f435f;
+}
+
+/* Progress Bar */
+.tp-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 100;
+}
+
+.tp-progress-bar {
+    height: 100%;
+    background-color: #0f435f;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* Timer */
+.tp-timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.tp-timer-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#0f435f 0deg, transparent 0deg);
+    transition: background 0.1s linear;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .tp-leftarrow,
+    .tp-rightarrow {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .tp-leftarrow {
+        left: 10px;
+    }
+    
+    .tp-rightarrow {
+        right: 10px;
+    }
+    
+    .tp-bullets {
+        bottom: 20px;
+    }
+    
+    .tp-bullet {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .tp-thumbs {
+        height: 80px;
+    }
+    
+    .tp-thumb {
+        width: 60px;
+        height: 60px;
+    }
+}
+

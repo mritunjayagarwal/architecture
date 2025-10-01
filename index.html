@@ -11,6 +11,8 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/hero-slider.css" rel="stylesheet">
+    <link href="css/revslider/navigation.css" rel="stylesheet">
     <link href="modules/slick/slick.css" rel="stylesheet">
     <link href="modules/slick/slick-theme.css" rel="stylesheet">
     <link href="modules/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -42,7 +44,7 @@
                                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="./services.html">Services</a></li>
                                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="./projects.html">Projects</a></li>
                                             <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="#">Blog</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="#">Contact</a> </li>
+                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="./contact.html">Contact</a> </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -53,71 +55,77 @@
             </div>
         </div>
     </header>
-    <!-- Slider -->
-    <div class="arcprime-homepage-slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="arcprime-slider">
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/001.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">01.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">Taj Palace Hotel, Mumbai</div>
-                                </div>
+    <!-- Hero Slider -->
+    <section class="hero-slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider" id="heroSlider">
+                    <!-- Slide 1 -->
+                    <div class="slide active" data-slide="1">
+                        <div class="slide-image">
+                            <img src="https://www.myspacearchitects.com/assets/custom/slider-5.jpg" alt="Modern Architecture Design" />
+                        </div>
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1 class="slide-title">Modern Architecture</h1>
+                            <p class="slide-subtitle">Innovative designs that blend tradition with contemporary excellence</p>
+                            <a href="#" class="slide-btn">
+                                Explore Projects
+                                <i class="ti-arrow-right"></i>
                             </a>
                         </div>
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/002.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">02.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">Infosys Campus, Bangalore</div>
-                                </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide" data-slide="2">
+                        <div class="slide-image">
+                            <img src="https://www.myspacearchitects.com/assets/custom/slider-4.jpg" alt="Sustainable Design Solutions" />
+                        </div>
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1 class="slide-title">Sustainable Design</h1>
+                            <p class="slide-subtitle">Eco-friendly architecture that respects nature and culture</p>
+                            <a href="#" class="slide-btn">
+                                View Portfolio
+                                <i class="ti-arrow-right"></i>
                             </a>
                         </div>
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/003.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">03.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">National Museum, Delhi</div>
-                                </div>
-                            </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide" data-slide="3">
+                        <div class="slide-image">
+                            <img src="https://www.myspacearchitects.com/assets/custom/ywca_dehradun.jpg" alt="YWCA Dehradun Project" />
                         </div>
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/004.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">04.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">Lotus Temple, Delhi</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/005.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">05.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">Marina Bay Complex, Chennai</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="arcprime-slider-item">
-                            <a href="#"> <img class="arcprime-slider-img" src="images/slider/006.jpg" alt="">
-                                <div class="arcprime-slider-caption">
-                                    <div class="arcprime-slider-number">06.</div>
-                                    <div class="arcprime-slider-subtitle">Project</div>
-                                    <div class="arcprime-slider-title">Gandhi Memorial, Ahmedabad</div>
-                                </div>
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1 class="slide-title">YWCA Dehradun</h1>
+                            <p class="slide-subtitle">Community-focused architecture that brings people together</p>
+                            <a href="#" class="slide-btn">
+                                Learn More
+                                <i class="ti-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slider-nav prev-btn" id="prevBtn">
+                    <i class="ti-angle-left"></i>
+                </button>
+                <button class="slider-nav next-btn" id="nextBtn">
+                    <i class="ti-angle-right"></i>
+                </button>
+
+                <!-- Dots Navigation -->
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- About Us -->
     <div class="section-padding">
         <div class="container">
@@ -287,10 +295,66 @@
     <script src="js/plugins/jquery.isotope.v3.0.2.js"></script>
     <script src="js/plugins/modernizr-2.6.2.min.js"></script>
     <script src="js/plugins/jquery.waypoints.min.js"></script>
+    <script src="js/revslider/jquery.themepunch.tools.min.js"></script>
+    <script src="js/revslider/jquery.themepunch.revolution.min.js"></script>
     <script src="modules/slick/slick.js"></script>
     <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- Hero Slider JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Hero Slider Functionality
+            let currentSlide = 1;
+            const totalSlides = 3;
+            
+            // Initialize slider
+            function initSlider() {
+                $('.slide').removeClass('active');
+                $(`.slide[data-slide="${currentSlide}"]`).addClass('active');
+                $('.dot').removeClass('active');
+                $(`.dot[data-slide="${currentSlide}"]`).addClass('active');
+            }
+            
+            // Go to specific slide
+            function goToSlide(slideNumber) {
+                if (slideNumber < 1) slideNumber = totalSlides;
+                if (slideNumber > totalSlides) slideNumber = 1;
+                
+                currentSlide = slideNumber;
+                initSlider();
+            }
+            
+            // Next slide
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+            
+            // Previous slide
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+            
+            // Event listeners
+            $('#nextBtn').click(nextSlide);
+            $('#prevBtn').click(prevSlide);
+            
+            $('.dot').click(function() {
+                const slideNumber = parseInt($(this).data('slide'));
+                goToSlide(slideNumber);
+            });
+            
+            // Initialize on load
+            initSlider();
+            
+            // Keyboard navigation
+            $(document).keydown(function(e) {
+                if (e.keyCode === 37) prevSlide(); // Left arrow
+                if (e.keyCode === 39) nextSlide(); // Right arrow
+            });
+        });
+    </script>
 </body>
 
 </html>

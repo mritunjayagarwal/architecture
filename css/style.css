@@ -573,117 +573,133 @@ h2:after {
 }
 
 
-/* ** Homepage slider ** */
-.arcprime-homepage-slider {
-    padding-top: 120px;
-    outline: none;
-}
-.arcprime-slider-item {
-    height: 780px;
+/* ** Revolution Slider ** */
+.rev_slider_wrapper {
     position: relative;
-    outline: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
 }
-@media (max-width: 991px) {
-    .arcprime-slider-item {
-        height: 380px;
-        margin-bottom: 10px;
-    }
+
+.rev_slider_wrapper--p80 {
+    padding-top: 80px;
 }
-.arcprime-homepage-slider .arcprime-slider-item {
-    margin-left: 5px;
+
+.tp-overflow-hidden {
+    overflow: hidden;
 }
-.arcprime-slider-item:focus {
-    outline: none;
+
+.rev_slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.arcprime-slider-caption {
+
+.fullwidthabanner {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.rev_slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rev-item {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.rev-slidebg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: left;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: opacity .2s ease-out;
-    transition: opacity .2s ease-out;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 80%;
-    height: 80%;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    padding: 30px;
-    display: flex;
-}
-.arcprime-slider-imghover {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     top: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.6);
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    left: 0;
+    z-index: 1;
 }
-.arcprime-slider-item:hover .arcprime-slider-caption {
-    opacity: 1;
+
+.tp-caption {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
 }
-.arcprime-slider-item:hover .arcprime-slider-imghover {
-    opacity: 1;
+
+.tp-resizeme {
+    z-index: 10;
 }
-.arcprime-slider-number {
+
+.rev-btn-1 {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0f435f;
+    color: #fff;
+    text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 60px;
-    line-height: 1em;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: transparent;
-    -webkit-text-stroke: 1px #0f435f;
-}
-.arcprime-slider-title {
-    font-size: 32px;
-    line-height: 1.3em;
-    font-weight: 300;
-    color: #181b31;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #0f435f;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
-.arcprime-slider-subtitle {
+
+.rev-btn-1:hover {
+    background-color: transparent;
+    color: #0f435f;
+    text-decoration: none;
+}
+
+.rev-btn-1 .arrow {
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.rev-btn-1:hover .arrow {
+    transform: translateX(5px);
+}
+
+.rev-btn-1 i {
     font-size: 12px;
-    line-height: 1.75em;
-    font-weight: 300;
-    color: #808291;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
 }
-.arcprime-slider-container {
-    padding: 0;
+
+.rev-spacer {
+    height: 60px;
+    background-color: #fff;
 }
-/* slider arrows */
-.arcprime-homepage-slider .slick-slider .slick-prev:before,
-.arcprime-homepage-slider .slick-slider .slick-next:before {
-    color: #181b31;
-}
-@media (min-width: 768px) {
-    .arcprime-homepage-slider .slick-slider .slick-next {
-        right: -3%;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rev_slider_wrapper {
+        height: 50vh;
+        min-height: 400px;
     }
-}
-@media (min-width: 768px) {
-    .arcprime-homepage-slider .slick-slider .slick-prev {
-        left: -3%;
+    
+    .fullwidthabanner {
+        height: 50vh;
+        min-height: 400px;
     }
-}
-/* slider items gutter & height */
-.arcprime-homepage-slider .slick-slide {
-    margin: 0 5px;
-}
-.arcprime-homepage-slider .slick-list {
-    margin: 0 -5px;
+    
+    .rev-item {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .rev-btn-1 {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
 }
 
 
