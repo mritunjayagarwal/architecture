@@ -837,17 +837,31 @@ h2:after {
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile carousel improvements */
+@media (max-width: 576px) {
+    .project-carousel-section .container {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+    
     .project-carousel {
-        padding: 0 90px;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    .project-carousel-section .carousel-wrapper {
+        border-radius: 0;
+        margin: 0;
     }
     
     .carousel-slides {
-        height: 450px;
+        height: 400px;
     }
     
     .slide-content {
-        padding: 25px 15px;
+        padding: 20px 15px;
     }
     
     .slide-content h3 {
@@ -858,18 +872,36 @@ h2:after {
         font-size: 0.9rem;
     }
     
+    /* Hide navigation arrows on mobile */
     .carousel-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 14px;
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-carousel {
+        padding: 0 !important;
     }
     
-    .prev-btn {
-        left: -45px;
+    .carousel-slides {
+        height: 350px;
     }
     
-    .next-btn {
-        right: -45px;
+    .slide-content {
+        padding: 15px 10px;
+    }
+    
+    .slide-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .slide-content p {
+        font-size: 0.8rem;
+    }
+    
+    /* Hide navigation arrows on mobile */
+    .carousel-btn {
+        display: none !important;
     }
 }
 
@@ -2077,6 +2109,15 @@ ul.team-info-social li {
     .arcprime-project-wrap h3 {
         font-size: 18px;
     }
+    
+    /* Project image improvements for smaller screens */
+    .arcprime-project-wrap img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
 }
 @media (max-width: 768px) {
     .arcprime-project-wrap {
@@ -2084,6 +2125,23 @@ ul.team-info-social li {
     }
     .arcprime-project-wrap h3 {
         font-size: 16px;
+    }
+    
+    /* Mobile project image improvements for tablets */
+    .arcprime-project-wrap img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .arcprime-project-items .col-md-6 {
+        margin-bottom: 30px;
+    }
+    
+    .arcprime-project-content {
+        padding: 25px 20px;
     }
 }
 
@@ -2146,5 +2204,29 @@ ul.team-info-social li {
     }
     .arcprime-project-wrap {
         padding: 0;
-    } 
+    }
+    
+    /* Mobile project image improvements */
+    .arcprime-project-wrap img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .arcprime-project-items .col-md-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .arcprime-project-content {
+        padding: 20px 15px;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 15px;
+    }
 }
