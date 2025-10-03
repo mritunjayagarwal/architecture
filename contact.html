@@ -202,19 +202,19 @@
             
             // Build personalized WhatsApp message
             let whatsappMessage = `Hey! I just visited your website and here are my contact details:\n\n`;
-            whatsappMessage += `👤 Name: ${name}\n`;
+            whatsappMessage += `Name: ${name}\n`;
             
             if (email && email.trim() !== '') {
-                whatsappMessage += `📧 Email: ${email}\n`;
+                whatsappMessage += `Email: ${email}\n`;
             }
             
-            whatsappMessage += `📋 Subject: ${subject}\n\n`;
+            whatsappMessage += `Subject: ${subject}\n\n`;
             
             if (message && message.trim() !== '') {
-                whatsappMessage += `💬 Message: ${message}\n\n`;
+                whatsappMessage += `Message: ${message}\n\n`;
             }
             
-            whatsappMessage += `Looking forward to hearing from you! 😊`;
+            whatsappMessage += `Looking forward to hearing from you!`;
             
             // Encode message for URL
             const encodedMessage = encodeURIComponent(whatsappMessage);
