@@ -1,0 +1,90 @@
+warning: in the working copy of 'contact.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/contact.html b/contact.html[m
+[1mindex c842cbf..ac1a8e5 100644[m
+[1m--- a/contact.html[m
+[1m+++ b/contact.html[m
+[36m@@ -91,7 +91,7 @@[m
+                         </div>[m
+                         <div class="col-md-5 offset-md-1">[m
+                             <h6 class="mb-30">Drop me a line!</h6>[m
+[31m-                            <form method="post" class="contact__form" action="https://duruthemes.com/demo/html/arcprime/light/mail.php">[m
+[32m+[m[32m                            <form method="post" class="contact__form" id="contactForm">[m
+                                 <!-- Form message -->[m
+                                 <div class="row">[m
+                                     <div class="col-12">[m
+[36m@@ -106,7 +106,7 @@[m
+                                         <input name="name" type="text" placeholder="Your Name *" required> [m
+                                     </div>[m
+                                     <div class="col-md-6 form-group">[m
+[31m-                                        <input name="email" type="email" placeholder="Your Email *" required> [m
+[32m+[m[32m                                        <input name="email" type="email" placeholder="Your Email">[m[41m [m
+                                     </div>[m
+                                     <div class="col-md-6 form-group">[m
+                                         <input name="phone" type="text" placeholder="Your Number *" required> [m
+[36m@@ -115,7 +115,7 @@[m
+                                         <input name="subject" type="text" placeholder="Subject *" required> [m
+                                     </div>[m
+                                     <div class="col-md-12 form-group">[m
+[31m-                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required></textarea>[m
+[32m+[m[32m                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>[m
+                                     </div>[m
+                                     <div class="col-md-12">[m
+                                         <input name="submit" type="submit"  value="Send Message">[m
+[36m@@ -174,6 +174,57 @@[m
+     <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>[m
+     <script src="modules/masonry/masonry.pkgd.min.js"></script>[m
+     <script src="js/script.js"></script>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <!-- WhatsApp Contact Form Handler -->[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        // Configuration: Replace with your WhatsApp number (include country code, no + sign)[m
+[32m+[m[32m        const WHATSAPP_NUMBER = "1234567890"; // Example: "1234567890" for US number[m
+[32m+[m[41m        [m
+[32m+[m[32m        document.getElementById('contactForm').addEventListener('submit', function(e) {[m
+[32m+[m[32m            e.preventDefault(); // Prevent default form submission[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Get form data[m
+[32m+[m[32m            const formData = new FormData(this);[m
+[32m+[m[32m            const name = formData.get('name');[m
+[32m+[m[32m            const email = formData.get('email');[m
+[32m+[m[32m            const phone = formData.get('phone');[m
+[32m+[m[32m            const subject = formData.get('subject');[m
+[32m+[m[32m            const message = formData.get('message');[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Build WhatsApp message[m
+[32m+[m[32m            let whatsappMessage = `*New Contact Form Submission*\n\n`;[m
+[32m+[m[32m            whatsappMessage += `*Name:* ${name}\n`;[m
+[32m+[m[32m            whatsappMessage += `*Phone:* ${phone}\n`;[m
+[32m+[m[32m            whatsappMessage += `*Subject:* ${subject}\n`;[m
+[32m+[m[41m            [m
+[32m+[m[32m            if (email && email.trim() !== '') {[m
+[32m+[m[32m                whatsappMessage += `*Email:* ${email}\n`;[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m            if (message && message.trim() !== '') {[m
+[32m+[m[32m                whatsappMessage += `*Message:* ${message}\n`;[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Encode message for URL[m
+[32m+[m[32m            const encodedMessage = encodeURIComponent(whatsappMessage);[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Create WhatsApp URL[m
+[32m+[m[32m            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Open WhatsApp in new tab[m
+[32m+[m[32m            window.open(whatsappURL, '_blank');[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Show success message[m
+[32m+[m[32m            const successMsg = document.querySelector('.contact__msg');[m
+[32m+[m[32m            if (successMsg) {[m
+[32m+[m[32m                successMsg.style.display = 'block';[m
+[32m+[m[32m                successMsg.textContent = 'WhatsApp message opened! Please send the message to complete your inquiry.';[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m            // Reset form[m
+[32m+[m[32m            this.reset();[m
+[32m+[m[32m        });[m
+[32m+[m[32m    </script>[m
+ </body>[m
+ [m
+ <!-- Mirrored from duruthemes.com/demo/html/arcprime/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Sep 2025 21:18:03 GMT -->[m

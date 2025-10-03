@@ -97,7 +97,7 @@
                         </div>
                         <div class="col-md-5 offset-md-1">
                             <h6 class="mb-30">Drop me a line!</h6>
-                            <form method="post" class="contact__form" action="https://duruthemes.com/demo/html/arcprime/light/mail.php">
+                            <form method="post" class="contact__form" id="contactForm">
                                 <!-- Form message -->
                                 <div class="row">
                                     <div class="col-12">
@@ -112,16 +112,13 @@
                                         <input name="name" type="text" placeholder="Your Name *" required> 
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <input name="email" type="email" placeholder="Your Email *" required> 
+                                        <input name="email" type="email" placeholder="Your Email"> 
                                     </div>
-                                    <div class="col-md-6 form-group">
-                                        <input name="phone" type="text" placeholder="Your Number *" required> 
-                                    </div>
-                                    <div class="col-md-6 form-group">
+                                    <div class="col-md-12 form-group">
                                         <input name="subject" type="text" placeholder="Subject *" required> 
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required></textarea>
+                                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <input name="submit" type="submit"  value="Send Message">
@@ -187,6 +184,62 @@
     <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- WhatsApp Contact Form Handler -->
+    <script>
+        // Configuration: Replace with your WhatsApp number (include country code, no + sign)
+        const WHATSAPP_NUMBER = "919876543210"; // Indian number without + sign
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Build personalized WhatsApp message
+            let whatsappMessage = `Hey! I just visited your website and here are my contact details:\n\n`;
+            whatsappMessage += `👤 Name: ${name}\n`;
+            
+            if (email && email.trim() !== '') {
+                whatsappMessage += `📧 Email: ${email}\n`;
+            }
+            
+            whatsappMessage += `📋 Subject: ${subject}\n\n`;
+            
+            if (message && message.trim() !== '') {
+                whatsappMessage += `💬 Message: ${message}\n\n`;
+            }
+            
+            whatsappMessage += `Looking forward to hearing from you! 😊`;
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            // Debug: Log the message and URL
+            console.log('WhatsApp Message:', whatsappMessage);
+            console.log('WhatsApp URL:', whatsappURL);
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            const successMsg = document.querySelector('.contact__msg');
+            if (successMsg) {
+                successMsg.style.display = 'block';
+                successMsg.textContent = 'WhatsApp message opened! Please send the message to complete your inquiry.';
+            }
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
 </body>
 
 <!-- Mirrored from duruthemes.com/demo/html/arcprime/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Sep 2025 21:18:03 GMT -->
