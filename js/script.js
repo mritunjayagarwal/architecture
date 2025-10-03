@@ -215,6 +215,8 @@ $(document).ready(function() {
     var slides = $('.carousel-slide');
     var dots = $('.carousel-dots .dot');
     var totalSlides = slides.length;
+    var autoplayInterval;
+    var autoplayDelay = 6000; // 6 seconds
 
     function showSlide(index) {
         slides.removeClass('active');
@@ -233,21 +235,44 @@ $(document).ready(function() {
         showSlide(currentSlide);
     }
 
+    // Start autoplay
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, autoplayDelay);
+    }
+
+    // Stop autoplay
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
     // Event listeners
     $('#nextBtn').click(function() {
+        stopAutoplay();
         nextSlide();
+        startAutoplay();
     });
 
     $('#prevBtn').click(function() {
+        stopAutoplay();
         prevSlide();
+        startAutoplay();
     });
 
     dots.click(function() {
+        stopAutoplay();
         currentSlide = $(this).data('slide');
         showSlide(currentSlide);
+        startAutoplay();
     });
+
+    // Pause autoplay on hover
+    $('.carousel-wrapper').hover(
+        function() { stopAutoplay(); },
+        function() { startAutoplay(); }
+    );
 
     // Initialize
     showSlide(0);
+    startAutoplay();
 });
     

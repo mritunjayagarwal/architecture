@@ -318,7 +318,7 @@ h2 {
 }
 h2:after {
     content: '';
-    background-image: url(../images/dots.png);
+    /* background-image: url(../images/dots.png); */
     background-repeat: repeat;
     background-position: 50% 50%;
     position: absolute;
@@ -414,7 +414,7 @@ h2:after {
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 }
 .arcprime-start-header.scroll-on .navbar-brand img {
-    height: 72px;
+    height: 90px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
@@ -431,11 +431,21 @@ h2:after {
     padding: 0;
 }
 .navbar-brand img {
-    height: 96px;
+    height: 120px;
     width: auto;
     display: block;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+.navbar-brand {
+    font-weight: 800 !important;
+}
+
+.navbar-brand span {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
 }
 .navbar-toggler {
     float: right;
