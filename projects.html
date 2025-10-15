@@ -29,27 +29,59 @@
             <div class="container arcprime-navbar-container">
                 <div class="arcprime-navigation-wrap bg-light arcprime-start-header start-style">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <nav class="navbar navbar-expand-md navbar-light">
-                                    <!-- Logo -->
-                                    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;"> 
-                                        <img src="images/logo.png" alt="AR & Associates" style="height: 60px; margin-right: 15px;">
-                                        <span style="font-size: 26px; font-weight: 800; color: #181b31; letter-spacing: 1px; font-family: 'Playfair Display', 'Times New Roman', serif;">AR <span style="font-style: italic; color: #0f435f; font-size: 28px; font-weight: 600; margin: 0 3px; text-shadow: 1px 1px 3px rgba(15, 67, 95, 0.4);">&</span> Associates</span>
-                                    </a>
-                                    <!-- Menu -->
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="index.html">Home</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="about.html">About</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="services.html">Services</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active"> <a class="nav-link" href="projects.html">Projects</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="blog.html">Blog</a></li>
-                                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="contact.html">Contact</a> </li>
-                                        </ul>
-                                    </div>
-                                </nav>
+                        <!-- Mobile Layout: Two vertical sections -->
+                        <div class="mobile-navbar-layout d-md-none">
+                            <!-- Upper Section: Centered Logo -->
+                            <div class="mobile-logo-section text-center">
+                                <a class="navbar-brand" href="index.html" style="display: inline-flex; align-items: center; justify-content: center;"> 
+                                    <img src="images/logo.png" alt="AR & Associates" style="height: 40px; margin-right: 8px;">
+                                    <span style="font-size: 20px; font-weight: 800; color: #181b31; letter-spacing: 1px; font-family: 'Playfair Display', 'Times New Roman', serif;">AR <span style="font-style: italic; color: #0f435f; font-size: 22px; font-weight: 600; margin: 0 3px; text-shadow: 1px 1px 3px rgba(15, 67, 95, 0.4);">&</span> Associates</span>
+                                </a>
+                            </div>
+                            <!-- Lower Section: Menu Options -->
+                            <div class="mobile-menu-section">
+                                <ul class="mobile-nav-list">
+                                    <li class="mobile-nav-item"> <a class="mobile-nav-link" href="about.html">About</a></li>
+                                    <li class="mobile-nav-item"> <a class="mobile-nav-link" href="services.html">Services</a></li>
+                                    <li class="mobile-nav-item active"> <a class="mobile-nav-link" href="projects.html">Projects</a></li>
+                                    <li class="mobile-nav-item dropdown">
+                                        <a class="mobile-nav-link dropdown-toggle" href="#" id="mobileMoreDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            +More
+                                        </a>
+                                        <div class="mobile-dropdown-menu" aria-labelledby="mobileMoreDropdown">
+                                            <a class="mobile-dropdown-item" href="index.html">Home</a>
+                                            <a class="mobile-dropdown-item" href="blog.html">Blog</a>
+                                            <a class="mobile-dropdown-item" href="contact.html">Contact</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Desktop Layout: Original navbar -->
+                        <div class="desktop-navbar-layout d-none d-md-block">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <nav class="navbar navbar-expand-md navbar-light">
+                                        <!-- Logo -->
+                                        <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;"> 
+                                            <img src="images/logo.png" alt="AR & Associates" style="height: 60px; margin-right: 15px;">
+                                            <span style="font-size: 26px; font-weight: 800; color: #181b31; letter-spacing: 1px; font-family: 'Playfair Display', 'Times New Roman', serif;">AR <span style="font-style: italic; color: #0f435f; font-size: 28px; font-weight: 600; margin: 0 3px; text-shadow: 1px 1px 3px rgba(15, 67, 95, 0.4);">&</span> Associates</span>
+                                        </a>
+                                        <!-- Menu -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="index.html">Home</a></li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="about.html">About</a></li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="services.html">Services</a></li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active"> <a class="nav-link" href="projects.html">Projects</a></li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="blog.html">Blog</a></li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4"> <a class="nav-link" href="contact.html">Contact</a> </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,8 +134,8 @@
             <div class="row arcprime-project-items">
                 <div class="col-md-6 single-item interior urban">
                     <div class="arcprime-project-wrap"> 
-                       <a href="project-page.html"><img src="images/projects/Ashutosh ji Complex 1.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                       <a href="project-page.html"><img src="images/projects/Ashutosh ji Complex 1.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>01.Project</p>
                             <h3><a href="projects.html">Twin Drana Plaza</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -111,9 +143,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 single-item urban exterior">
-                    <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Ashutosh ji Complex 2.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                    <div class="arcprime-project-wrap" style = "margin-top: -80px"> 
+                        <a href="project-page.html"><img src="images/projects/Ashutosh ji Complex 2.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>02.Project</p>
                             <h3><a href="projects.html">Art Museum, USA</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -122,8 +154,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/EVOLET Elevation View 1.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/EVOLET Elevation View 1.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>03.Project</p>
                             <h3><a href="projects.html">Geometric Building</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -132,8 +164,8 @@
                 </div>
                 <div class="col-md-6 single-item urban interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/EVOLET Elevation View 2.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/EVOLET Elevation View 2.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>04.Project</p>
                             <h3><a href="projects.html">Arch Studio, CA</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -142,8 +174,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/First floor isometric view.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/First floor isometric view.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>05.Project</p>
                             <h3><a href="projects.html">Crowne Plaza, CA</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -152,8 +184,8 @@
                 </div>
                 <div class="col-md-6 single-item urban exterior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/First floor plan.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/First floor plan.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>06.Project</p>
                             <h3><a href="project-page.html">Twin Arya Office</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -162,8 +194,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Ground floor isometric view.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/Ground floor isometric view.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>05.Project</p>
                             <h3><a href="project-page.html">Crowne Plaza, CA</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -172,8 +204,8 @@
                 </div>
                 <div class="col-md-6 single-item urban exterior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Ground floor plan.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/Ground floor plan.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>06.Project</p>
                             <h3><a href="project-page.html">Twin Arya Office</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -182,8 +214,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Manoj ji 8 revision final last.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/Manoj ji 8 revision final last.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>05.Project</p>
                             <h3><a href="project-page.html">Crowne Plaza, CA</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -192,8 +224,8 @@
                 </div>
                 <div class="col-md-6 single-item urban exterior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Mr. Prashant.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/Mr. Prashant.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>06.Project</p>
                             <h3><a href="project-page.html">Twin Arya Office</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -202,8 +234,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/MZN residence without boundary (2).jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/MZN residence without boundary (2).jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>05.Project</p>
                             <h3><a href="project-page.html">Crowne Plaza, CA</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -212,8 +244,8 @@
                 </div>
                 <div class="col-md-6 single-item urban exterior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/saini ji (1).jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/saini ji (1).jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>06.Project</p>
                             <h3><a href="project-page.html">Twin Arya Office</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -222,8 +254,8 @@
                 </div>
                 <div class="col-md-6 single-item exterior interior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/saini ji (3).jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/saini ji (3).jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>05.Project</p>
                             <h3><a href="project-page.html">Crowne Plaza, CA</a></h3>
                             <a href="project-page.html" class="arcprime-project-link"></a>
@@ -232,8 +264,8 @@
                 </div>
                 <div class="col-md-6 single-item urban exterior">
                     <div class="arcprime-project-wrap"> 
-                        <a href="project-page.html"><img src="images/projects/Second floor isometric view.jpg" alt=""></a>
-                        <div class="arcprime-project-content">
+                        <a href="project-page.html"><img src="images/projects/Second floor isometric view.jpg" style = "height: 250px;" alt=""></a>
+                        <div class="arcprime-project-content" style = "margin-left: 70px">
                             <p>06.Project</p>
                             <h3><a href="projects.html">Twin Arya Office</a></h3>
                             <a href="projects.html" class="arcprime-project-link"></a>
@@ -292,6 +324,84 @@
     <script src="modules/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="modules/masonry/masonry.pkgd.min.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- Mobile Dropdown JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Mobile dropdown functionality
+            $('.mobile-nav-item.dropdown .dropdown-toggle').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const dropdown = $(this).closest('.mobile-nav-item.dropdown');
+                const isOpen = dropdown.hasClass('show');
+                
+                // Close all other dropdowns
+                $('.mobile-nav-item.dropdown').removeClass('show');
+                
+                // Toggle current dropdown
+                if (!isOpen) {
+                    dropdown.addClass('show');
+                    
+                    // Position dropdown to prevent overflow
+                    positionDropdown(dropdown);
+                }
+            });
+            
+            // Close dropdown when clicking outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('.mobile-nav-item.dropdown').length) {
+                    $('.mobile-nav-item.dropdown').removeClass('show');
+                }
+            });
+            
+            // Function to position dropdown to prevent overflow
+            function positionDropdown(dropdown) {
+                const dropdownMenu = dropdown.find('.mobile-dropdown-menu');
+                const dropdownToggle = dropdown.find('.dropdown-toggle');
+                const viewportWidth = $(window).width();
+                const dropdownWidth = dropdownMenu.outerWidth();
+                const toggleOffset = dropdownToggle.offset();
+                const toggleWidth = dropdownToggle.outerWidth();
+                
+                // Reset positioning
+                dropdownMenu.css({
+                    'left': '50%',
+                    'right': 'auto',
+                    'transform': 'translateX(-50%)'
+                });
+                
+                // Check if dropdown would overflow on the right
+                const rightEdge = toggleOffset.left + (toggleWidth / 2) + (dropdownWidth / 2);
+                if (rightEdge > viewportWidth) {
+                    // Position to the right edge
+                    dropdownMenu.css({
+                        'left': 'auto',
+                        'right': '0',
+                        'transform': 'none'
+                    });
+                }
+                
+                // Check if dropdown would overflow on the left
+                const leftEdge = toggleOffset.left + (toggleWidth / 2) - (dropdownWidth / 2);
+                if (leftEdge < 0) {
+                    // Position to the left edge
+                    dropdownMenu.css({
+                        'left': '0',
+                        'right': 'auto',
+                        'transform': 'none'
+                    });
+                }
+            }
+            
+            // Reposition dropdown on window resize
+            $(window).resize(function() {
+                $('.mobile-nav-item.dropdown.show').each(function() {
+                    positionDropdown($(this));
+                });
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from duruthemes.com/demo/html/arcprime/light/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Sep 2025 21:18:02 GMT -->
