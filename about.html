@@ -370,7 +370,8 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="row">
+                    <!-- Desktop Grid Layout -->
+                    <div class="row d-none d-md-flex">
                         <div class="col-md-3">
                             <div class="item"> <img src="images/logos/1.png" alt="image"> </div>
                         </div>
@@ -397,6 +398,34 @@
                             <div class="item no-bord"> <img src="images/logos/8.png" alt="image"> </div>
                         </div>
                     </div>
+                    
+                    <!-- Mobile Slider Layout -->
+                    <div class="logos-slider d-md-none">
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/1.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/2.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/3.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/4.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/5.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/6.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/7.png" alt="image"> </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item"> <img src="images/logos/8.png" alt="image"> </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -410,7 +439,6 @@
                         <img src="images/logo.png" class="logo" alt="AR & Associates" style="height: 35px; width: 35px; margin-right: 8px;">
                         <span style="font-size: 18px; font-weight: 700; color: #181b31; letter-spacing: 0.5px; font-family: 'Playfair Display', 'Times New Roman', serif; line-height: 1;">AR <span style="font-style: italic; color: #0f435f; font-size: 20px; font-weight: 400; margin: 0 2px; text-shadow: 1px 1px 2px rgba(15, 67, 95, 0.3);">&</span> Associates</span>
                     </div>
-                    <p><small>Copyright &copy;2025 AR & Associates. All rights reserved.</small></p>
                 </div>
                 <div class="col-md-3">
                     <p><b>Contact Us</b>info@arassociates.com
@@ -436,6 +464,13 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Copyright -->
+    <div class="copyright-section">
+        <div class="container">
+            <p class="text-center"><small>Copyright &copy;2025 AR & Associates. All rights reserved.</small></p>
+        </div>
+    </div>
     <!-- toTop --><a href="#" class="totop">TOP</a>
     <!-- Js -->
     <script src="js/plugins/jquery-3.3.1.min.js"></script>
@@ -523,6 +558,27 @@
                 $('.mobile-nav-item.dropdown.show').each(function() {
                     positionDropdown($(this));
                 });
+            });
+            
+            // Initialize logos slider for mobile
+            $('.logos-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
     </script>
