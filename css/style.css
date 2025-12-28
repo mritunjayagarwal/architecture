@@ -32,6 +32,12 @@ body {
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     color: #808291;
@@ -887,6 +893,10 @@ h2:after {
     .mobile-dropdown-menu {
         min-width: 100px;
         max-width: 120px;
+    }
+
+    .container {
+        max-width: 100%;
     }
 }
 
@@ -2300,6 +2310,84 @@ ul.team-info-social li {
     font-size: 11px;
     font-weight: 300;
 }
+
+/* Footer Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 25px 0;
+    }
+    
+    .footer-section .col-md-3 {
+        min-height: auto;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+    }
+    
+    .footer-section .col-md-3:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .footer-section .brand {
+        margin-bottom: 6px;
+    }
+    
+    .footer-section .brand img.logo {
+        margin-bottom: 8px;
+    }
+    
+    .footer-section p {
+        margin-bottom: 4px;
+        line-height: 1.4;
+    }
+    
+    .footer-section p b {
+        margin-bottom: 3px;
+    }
+    
+    .footer-social-link {
+        margin-top: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 20px 0;
+    }
+    
+    .footer-section .col-md-3 {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+    
+    .footer-section .col-md-3:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .footer-section .brand {
+        margin-bottom: 5px;
+    }
+    
+    .footer-section .brand img.logo {
+        margin-bottom: 6px;
+    }
+    
+    .footer-section p {
+        margin-bottom: 3px;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    
+    .footer-section p b {
+        margin-bottom: 2px;
+    }
+    
+    .footer-social-link {
+        margin-top: 5px;
+    }
+}
+
 .contact p b {
     font-size: 16px;
     line-height: 1.75em;
@@ -2661,5 +2749,145 @@ ul.team-info-social li {
         left: auto;
         right: auto;
         margin-top: 15px;
+    }
+}
+
+/* Projects CTA Section */
+.projects-cta-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.projects-cta-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-cta-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.projects-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 18px 40px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0f435f 0%, #181b31 100%);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 8px 25px rgba(15, 67, 95, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.projects-cta-btn:hover::before {
+    left: 100%;
+}
+
+.projects-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(15, 67, 95, 0.5);
+    background: linear-gradient(135deg, #0d3a52 0%, #14172a 100%);
+    color: white !important;
+    text-decoration: none;
+}
+
+.projects-cta-btn:active {
+    transform: translateY(-1px);
+}
+
+.projects-cta-btn span {
+    position: relative;
+    z-index: 1;
+    color: white !important;
+}
+
+.projects-cta-btn i {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    color: white !important;
+}
+
+.projects-cta-btn:hover span,
+.projects-cta-btn:hover i {
+    color: white !important;
+}
+
+.projects-cta-btn:hover i {
+    transform: translateX(8px);
+}
+
+/* Responsive adjustments for CTA */
+@media (max-width: 768px) {
+    .projects-cta-section {
+        padding: 40px 0;
+    }
+    
+    .projects-cta-wrapper {
+        padding: 0 15px;
+    }
+    
+    .projects-cta-btn {
+        width: 80%;
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-cta-section {
+        padding: 30px 0;
+    }
+    
+    .projects-cta-wrapper {
+        padding: 0 10px;
+    }
+    
+    .projects-cta-btn {
+        width: 90%;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+        gap: 10px;
+    }
+    
+    .projects-cta-btn i {
+        font-size: 1rem;
     }
 }
